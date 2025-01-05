@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfume Abode</title>
+    <link rel="stylesheet" href="./assets/styles/shop.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <!-- # Shop Page -->
+
+    <header id="header">
+        <!-- Website Name/Home Page Link -->
+        <div id="logo">
+            <a href="index.html">The Perfume Abode</a>
+        </div>
+    
+        <!-- Navbar -->
+        <nav id="nav">
+            
+        </nav>
+    
+        <!-- Header Icons (Search, Language, Currency, Wishlist, Cart) -->
+        <div class="header-icons">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="search" placeholder="Search..." class="search-bar">
+                <button class="search-icon">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+    
+            <!-- Language Selector -->
+            <select class="language-selector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+    
+            <!-- Currency Selector -->
+            <select class="currency-selector">
+                <option value="usd">$ USD</option>
+                <option value="eur">€ EUR</option>
+                <option value="gbp">£ GBP</option>
+            </select>
+    
+            <!-- Wishlist Icon -->
+            <a href="#" class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+    
+            <!-- Cart Icon -->
+            <a href="#" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="shop-container">
+        <section class="filter-sort">
+            <h1>Shop Our Exclusive Collection!</h1>
+            <div class="controls">
+                <!-- Filter & Sort Buttons -->
+                <div class="filter-sort-options">
+                    <button class="filter-btn" onclick="toggleFilter()">Filter</button>
+                    <button class="sort-btn" onclick="toggleSort()">Sort</button>
+                </div>
+
+                <!-- Filter Section -->
+                <div id="filter-options" class="filter-options">
+                    <h3>Filter by:</h3>
+                    <div class="filter-category">
+                        <label for="category">Category:</label>
+                        <select id="category">
+                            <option value="all">All</option>
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                            <option value="unisex">Unisex</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-fragrance-family">
+                        <label for="fragrance-family">Fragrance Family:</label>
+                        <select id="fragrance-family">
+                            <option value="all">All</option>
+                            <option value="floral">Floral</option>
+                            <option value="woody">Woody</option>
+                            <option value="oriental">Oriental</option>
+                            <option value="citrus">Citrus</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-brand">
+                        <label for="brand">Brand:</label>
+                        <select id="brand">
+                            <option value="all">All</option>
+                            <option value="chanel">Chanel</option>
+                            <option value="dior">Dior</option>
+                            <option value="gucci">Gucci</option>
+                            <option value="ysl">YSL</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Sort Section -->
+                <div id="sort-options" class="sort-options">
+                    <h3>Sort by:</h3>
+                    <select id="sort">
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                        <option value="new-arrivals">New Arrivals</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <!-- Single Product Card -->
+            <div class="product-card">
+                <img src="./assets/images/ysl libre perfume.jpg" alt="Product Name">
+                <h3>YSL <br> LIBRE</h3>
+                <p class="price">$50.00 (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html" target="_blank" class="details-link">View Details</a>
+            </div>
+            <!-- Repeat for more products -->
+
+            <div class="product-card">
+                <img src="./assets/images/Lost cherry.jpg" alt="Product Name">
+                <h3>TOM FORD <br> LOST CHERRY</h3>
+                <p class="price">$40.00 (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Fruity & Gourmand</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="https://www.fragrantica.com/perfume/Tom-Ford/Lost-Cherry-51411.html" target="_blank" class="details-link">View Details</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./assets/images/miss dior🎀.jpg" alt="Product Name">
+                <h3>MISS DIOR <br> BLOOMING BOUQUET</h3>
+                <p class="price">$55.00 (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral & Fresh</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="https://www.fragrantica.com/perfume/Dior/Miss-Dior-Blooming-Bouquet-23280.html" target="_blank" class="details-link">View Details</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./assets/images/Kayali Eden Juicy Apple.jpg" alt="Product Name">
+                <h3>KAY ALI <br> EDEN JUICY APPLE | 01</h3>
+                <p class="price">$65.00 (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Fruity & Floral</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="https://www.fragrantica.com/perfume/Kayali-Fragrances/Eden-Juicy-Apple-01-Eau-De-Parfum-70875.html" target="_blank" class="details-link">View Details</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./assets/images/Ombre Leather by Tom Ford.jpg" alt="Product Name">
+                <h3>TOM FORD <br> OMBRE LEATHER</h3>
+                <p class="price">$70.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Leather</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/Vanilla 28🍨🤎.jpg" alt="Product Name">
+                <h3>KAY ALI <br> VANILLA | 28 </h3>
+                <p class="price">$57.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Amber Vanilla</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/Perfume.jpg" alt="Product Name">
+                <h3>DIOR <br> SAUVAGE</h3>
+                <p class="price">$45.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Fresh & Spicy</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div> 
+
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/Parfum Gucci Flora 🤍🩷.jpg" alt="Product Name">
+                <h3>GUCCI <br> FLORA</h3>
+                <p class="price">$50.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/kilian.jpg" alt="Product Name">
+                <h3>KILIAN PARIS <br> ANGELS' SHARE</h3>
+                <p class="price">$60.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Oriental & Gourmand</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/Baccarat rouge 540.jpg" alt="Product Name">
+                <h3>MFK <br> BACCARAT ROUGE 540</h3>
+                <p class="price">$75.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/diorpoison.jpg" alt="Product Name">
+                <h3>DIOR <br> HYPNOTIC POISON</h3>
+                <p class="price">$50.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Gourmand</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/bleu de chanel.jpg" alt="Product Name">
+                <h3>CHANEL <br> BLEU DE CHANEL</h3>
+                <p class="price">$40.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Fresh</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./assets/images/Valentino Donna Born in Roma🍬.jpg" alt="Product Name">
+                <h3>VALENTINO <br> DONNA BORN IN ROMA</h3>
+                <p class="price">$65.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral & Oriental</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/good girl carolina herrera.jpg" alt="Product Name">
+                <h3>CAROLINA HERRERA <br> GOOD GIRL</h3>
+                <p class="price">$60.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral & Oriental</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/Prada perfume.jpg" alt="Product Name">
+                <h3>PRADA <br> MILANO </h3>
+                <p class="price">$70.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral & Oriental</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+            <div class="product-card">
+                <img src="./assets/images/Gucci Bloom.jpg" alt="Product Name">
+                <h3>GUCCI <br> BLOOM</h3>
+                <p class="price">$40.00  (100ml)</p>
+                <p class="fragrance-family">Fragrance Family - Floral</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-wishlist">Wishlist</button>
+                </div>
+                <a href="#" class="details-link">View Details</a>
+            </div>
+
+
+
+
+        </section>
+    </main>
+
+ 
+
+
+    <!-- Add footer here -->
+    <footer id="footer">
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo_round.png" alt="The Perfume Abode" class="footer-logo-img">
+                </a>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Form Section -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <form id="contact-form">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <input type="submit" id="submit" value="Send Message">
+            </form>
+          </div>
+  
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <h3>Show us some Love on Social Media!</h3>
+                <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/theperfumeabode/" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+       
+    
+    
+        
+</body>
+    
+<script src="./assets/scripts/main.js"></script>
+<script src="./assets/scripts/navbar.js"></script>
+<script src="https://kit.fontawesome.com/25d2db5b93.js" crossorigin="anonymous"></script>
+<script src="./assets/scripts/baseurl.js"></script>
+</html>

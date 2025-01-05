@@ -1,0 +1,198 @@
+/* # Shop Page styles */
+
+
+/* Shop Page Styling */
+.shop-container {
+    padding: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.filter-sort {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.filter-sort h1 {
+    color: goldenrod;
+    border-color: #f5deb3;
+    box-shadow: 0 0 5px rgba(245, 222, 179, 0.5);
+    margin: -20px 0px 30px 0px;
+    padding: 20px;
+    background-color: black;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Filter & Sort Buttons */
+.filter-sort-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-btn,
+.sort-btn {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    background-color: wheat;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover,
+.sort-btn:hover {
+    background-color: goldenrod;
+}
+
+/* Filter Options */
+.filter-options,
+.sort-options {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filter-category, .filter-fragrance-family, .filter-brand {
+    margin-bottom: 15px;
+}
+
+.filter-options select, .sort-options select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for the grid */
+    gap: 40px;
+    width: 100%;
+    margin: auto;
+    justify-items: center;
+}
+
+.product-card {
+    background: black;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(174, 166, 166, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.product-card .price {
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: black;
+    font-size: 1.2rem;
+
+}
+
+.product-card .fragrance-family {
+    font-size: 0.9rem;
+    color: wheat;
+    margin-bottom: 15px;
+    background-color: black;
+
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+
+}
+
+.product-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-actions .add-to-cart {
+    background-color: goldenrod;
+    color: #000;
+    font-size: 1rem;
+}
+
+.product-actions .add-to-wishlist {
+    background-color: wheat;
+    color: #000;
+    font-size: 1rem;
+
+}
+
+.product-actions button:hover {
+    opacity: 0.9;
+}
+
+.details-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+    padding-bottom: 1rem;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+}
+}

@@ -1,0 +1,519 @@
+/* # Global styles */
+
+/* header section styling */
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  text-decoration: none;
+  list-style-type: none;
+  background-color: rgb(20, 17, 17);
+  color: wheat;
+  font-family: "Poppins", sans-serif;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px;
+background-color: #000;
+}
+
+span{
+background-color: #000;
+}
+
+#logo a {
+background-color: #000;
+
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-color: #f5deb3;
+  background-color: black;
+  box-shadow: 0 0 5px rgba(245, 222, 179, 0.5);
+}
+
+#nav {
+  background-color: black;
+ 
+
+}
+#nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+
+}
+
+.header-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+background-color: #000;
+text-align: center;
+
+}
+
+.language-selector,
+.currency-selector {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  appearance: none;
+background-color: #000;
+padding: 10px;
+
+}
+
+/* Hover Effects */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: wheat;
+  font-size: 1rem;
+  padding: 10px;
+  transition: color 0.3s ease;
+  background-color: black;
+
+}
+
+.nav-links a:hover {
+  color: #f5deb3; /* Slightly brighter wheat */
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f5deb3;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.language-selector:hover,
+.currency-selector:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+/* Search Bar */
+.search-container {
+  position: relative;
+  display: inline-block;
+background-color: #000;
+
+}
+
+.search-bar {
+  width: 200px;
+  padding: 8px 40px 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #f5deb3;
+  box-shadow: 0 0 5px rgba(245, 222, 179, 0.5);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+  background-color: rgb(20, 17, 17);
+  
+}
+.search-icon i{
+  background-color: rgb(20, 17, 17);
+}
+
+.search-icon:hover {
+  color: #ffffff;
+}
+
+
+.cart-icon{
+
+    background-color: #000;
+  
+}
+i{
+  background-color: #000;
+}
+.wishlist-icon{
+  background-color: #000;
+}
+/* Responsive Media Queries */
+
+/* Large Screens (Desktops) */
+@media (min-width: 1025px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .search-bar {
+    width: 250px;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  #nav ul {
+    gap: 15px;
+  }
+
+  .search-bar {
+    width: 200px;
+  }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  #logo {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .header-icons {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Extra Small Screens (Very Small Phones) */
+@media (max-width: 480px) {
+  header {
+    padding: 5px;
+  }
+
+  #logo {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav ul {
+    font-size: 0.9rem;
+  }
+
+  .search-bar {
+    font-size: 12px;
+    padding: 6px 30px 6px 10px;
+  }
+
+  .search-icon {
+    font-size: 14px;
+  }
+
+  .header-icons {
+    gap: 15px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* footer styling  */
+
+#footer {
+  color: wheat;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  background-color: black;
+  border-color: 2px solid #f5deb3;
+  box-shadow: 0 0 5px rgba(245, 222, 179, 0.5);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.footer-logo {
+  background-color: black;
+}
+.footer-logo-img {
+  max-width: 150px;
+  height: auto;
+  background-color: black;
+}
+.social-media{
+  background-color: #000;
+}
+
+.social-media h3{
+  background-color: #000;
+}
+
+.footer-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: wheat;
+  text-decoration: none;
+  background-color: black;
+}
+
+/* Footer Links */
+.footer-links {
+  background-color: black;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  background-color: black;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+  background-color: black;
+}
+
+.footer-links ul li a {
+  color: wheat;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: black;
+}
+
+.footer-links ul li a:hover {
+  color: goldenrod;
+}
+
+/* Contact Form */
+/* General Contact Info Styling */
+.contact-info {
+  text-align: left;
+  width: 20%;
+  height: auto;
+  /* border: 2px solid red; */
+  background-color: black;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h3 {
+  font-size: 1.4rem;
+  
+  color: wheat;
+  background-color: #000;
+  text-align: center;
+}
+
+/* Form Styling */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #000;
+}
+
+/* Input and Textarea Styling */
+.contact-info input,
+.contact-info textarea {
+  /* margin: auto; */
+  width: 92%;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.contact-info textarea {
+  height: 40px;
+  
+}
+
+/* Submit Button Styling */
+#submit {
+  width: 100%;
+  padding: 12px;
+  background-color: wheat;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: black;
+  color: wheat;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 400px) {
+  .contact-info {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    height: 35px;
+    font-size: 13px;
+  }
+
+  #submit {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Social Media Icons */
+.social-media a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: black;
+}
+
+.social-media a:hover {
+  color: #f5deb3;
+}
+
+/* Sticky Footer */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 400px;
+  }
+  .contact-info button {
+    background-color: #f5deb3;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .social-media a {
+    font-size: 1.2rem; /* Slightly smaller social icons on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 20px;
+  }
+
+  .footer-logo a {
+    font-size: 1.2rem; /* Smaller logo size on very small screens */
+  }
+
+  .footer-links ul li a {
+    font-size: 0.9rem; /* Adjust link font size */
+  }
+
+  .contact-info input,
+  .contact-info textarea {
+    font-size: 12px; /* Slightly smaller inputs */
+  }
+
+  .contact-info button {
+    font-size: 12px; /* Adjust button font size */
+  }
+
+  .social-media a {
+    font-size: 1.2rem; /* Smaller social media icons */
+  }
+}

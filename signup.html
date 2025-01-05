@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfume Abode</title>
+    <link rel="stylesheet" href="./assets/styles/auth.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <!-- # Signup Page -->
+
+    <header id="header">
+        <!-- Website Name/Home Page Link -->
+        <div id="logo">
+            <a href="index.html">The Perfume Abode</a>
+        </div>
+    
+        <!-- Navbar -->
+        <nav id="nav">
+            
+        </nav>
+    
+        <!-- Header Icons (Search, Language, Currency, Wishlist, Cart) -->
+        <div class="header-icons">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="search" placeholder="Search..." class="search-bar">
+                <button class="search-icon">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+    
+            <!-- Language Selector -->
+            <select class="language-selector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+    
+            <!-- Currency Selector -->
+            <select class="currency-selector">
+                <option value="usd">$ USD</option>
+                <option value="eur">€ EUR</option>
+                <option value="gbp">£ GBP</option>
+            </select>
+    
+            <!-- Wishlist Icon -->
+            <a href="#" class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+    
+            <!-- Cart Icon -->
+            <a href="#" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Add main content here -->
+    <main>
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form method="POST" id="form">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+      
+                <label for="email">Email Address</label>
+                <input type="email" id="sign-email" name="email" required>
+      
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+      
+                <div>
+                    <input type="submit" id="submit-btn" value="Sign Up">
+                </div>
+            </form>
+
+            <div class="signup-footer">
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Add footer here -->
+    <footer id="footer">
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo_round.png" alt="The Perfume Abode" class="footer-logo-img">
+                </a>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Form Section -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <form id="contact-form">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <input type="submit" id="submit" value="Send Message">
+            </form>
+          </div>
+  
+    
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <h3>Show us some Love on Social Media!</h3>
+                <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/theperfumeabode/" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/scripts/navbar.js"></script>
+<script src="https://kit.fontawesome.com/25d2db5b93.js" crossorigin="anonymous"></script>
+<script src="./assets/scripts/baseurl.js"></script>
+<script src="./assets/scripts/auth.js"></script>
+</html>
